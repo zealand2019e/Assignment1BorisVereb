@@ -18,7 +18,7 @@ namespace RestService.Controllers
             new Book("1234567891013", "Ulysses", "James Joyce",730),
             new Book("1234567891014", "Don Quixote", "Miguel de Cervantes",863),
             new Book("1234567891015", "The Great Gatsby", "F. Scott Fitzgerald",218)
-    };
+        };
         // GET api/Book
         [HttpGet]
         public ActionResult<IEnumerable<Book>> Get()
