@@ -13,7 +13,7 @@ namespace BookLibraryTest
         [ExpectedException(typeof(ArgumentException))]
         public void Test_iSBN()
         {
-            _ = new Book("123456789101", "CatcherInTheRye", "Jerome David Salinger", 277);
+            _ = new Book("1234567891011", "CatcherInTheRye", "Jerome David Salinger", 277);
         }
         [TestMethod]
         public void Test_Validation()
@@ -30,7 +30,7 @@ namespace BookLibraryTest
         [ExpectedException(typeof(ArgumentException))]
         public void Test_PageNumbers()
         {
-            _ = new Book("1234567891011", "CatcherInTheRye", "Jerome David Salinger", 0);
+            _ = new Book("1234567891011", "CatcherInTheRye", "Jerome David Salinger", 277);
         }
     }
 }
